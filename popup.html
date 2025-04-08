@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tariff Price Adjuster</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        h1 {
+            font-size: 18px;
+            margin: 0 0 20px 0;
+            color: #2c3e50;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        h1 img {
+            width: 24px;
+            height: 24px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background-color: white;
+            font-size: 14px;
+            color: #333;
+            transition: border-color 0.2s;
+            margin-bottom: 15px;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+        }
+
+        select:hover {
+            border-color: #bbb;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            background-color: #3d8b40;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+    
+        Tariff Price Adjuster
+        <img src="pig.png" alt="Pig Icon">
+    </h1>
+    
+    <label for="countrySelect">Import Country</label>
+    <select id="countrySelect"></select>
+    
+    <label for="categorySelect">Product Category</label>
+    <select id="categorySelect"></select>
+    
+    <label for="pricingModelSelect">Pricing Model</label>
+    <select id="pricingModelSelect">
+        <option value="true">Percentage</option>
+        <option value="false">Gross Sum</option>
+    </select>
+    
+    <button id="applyTariff">Apply Tariff</button>
+    
+    <div class="footer">
+        Adjust prices based on import tariffs
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="countrymap.js"></script>
+    <script src="categorymap.js"></script>
+</body>
+
+</html>
