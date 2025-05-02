@@ -1,5 +1,5 @@
 const priceRegex = /\$\s?([\d,]+(?:\.\d{2})?)/g;
-applyTariffs();
+
 function applyTariffs() {
     chrome.storage.sync.get(["selectedCountry", "tariffPercentage", "markupPercentage", "isPercentagePricing"], function (data) {
         const tariffPercentage = data.tariffPercentage || 0;
