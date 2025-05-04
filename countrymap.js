@@ -30,7 +30,7 @@ const countryMap = {
         "Taiwan": 10,
         "Thailand": 10,
         "United Kingdom": 10,
-        "United States": 10,
+        "United States": 0,
         "Venezuela": 10,
         "Vietnam": 10
     
